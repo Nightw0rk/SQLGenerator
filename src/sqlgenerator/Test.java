@@ -4,6 +4,8 @@
  */
 package sqlgenerator;
 
+import javax.swing.JTextField;
+
 /**
  *
  * @author nightw0rk
@@ -14,6 +16,12 @@ public class Test {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        JTextField f = new JTextField("bla-bla");        
+        SQLGenerator s = new SQLGenerator("TEST");
+        s.addFeild("NAME", f, "setText", "getText",String.class);
+        s.setFeildValue("NAME", " ti ti ti tsal");
+        System.out.println(s.InserSQL());
+        
+        
     }
 }
