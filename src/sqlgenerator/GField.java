@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 /**
  * @author nightw0rk @date 25.02.2012 @time 13:25:04
  */
-public class GFeild {
+public class GField {
     public static Class gfString = String.class;
     public static Class gfNumber = double.class;
     public static Class gfInt = int.class;
@@ -36,7 +36,7 @@ public class GFeild {
      * @param m_Gettler  String
      */    
 
-    public GFeild(Object m_Object, String m_Settler, String m_Gettler,Class typeField) {
+    public GField(Object m_Object, String m_Settler, String m_Gettler,Class typeField) {
         this.m_Object = m_Object;
         this.m_Settler = m_Settler;
         this.m_Gettler = m_Gettler;
