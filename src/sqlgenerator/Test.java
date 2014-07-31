@@ -24,7 +24,7 @@ public class Test {
         Connection c =null;
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            c= DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","bn0258zx");
+            c= DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","password");
         } catch (Exception ex) {
             Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
         }
